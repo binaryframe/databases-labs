@@ -1,0 +1,13 @@
+application:
+  name: booking-system-stored-programs
+  api_prefix: /api
+server:
+  host: ${FLASK_HOST:-127.0.0.1}
+  port: ${FLASK_PORT:-5000}
+  debug: ${FLASK_DEBUG:-1}
+database:
+  host: ${MYSQL_HOST:-127.0.0.1}
+  port: ${MYSQL_PORT:-3306}
+  name: ${MYSQL_DATABASE:-booking_system}
+  user: ${MYSQL_USER:-root}
+  password: ${MYSQL_PASSWORD:-Root1234!}
