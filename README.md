@@ -24,11 +24,10 @@ The project demonstrates how to design a relational database, develop a structur
 9. [Running Laboratory Work 4](#9-running-laboratory-work-4)
 10. [Running Laboratory Work 5](#10-running-laboratory-work-5)
 11. [API Documentation](#11-api-documentation)
-12. [Testing with Postman](#12-testing-with-postman)
-13. [SQL Examples](#13-sql-examples)
-14. [Testing](#14-testing)
-15. [Learning Outcomes](#15-learning-outcomes)
-16. [Conclusion](#16-conclusion)
+12. [SQL Examples](#13-sql-examples)
+13. [Testing](#14-testing)
+14. [Learning Outcomes](#15-learning-outcomes)
+15. [Conclusion](#16-conclusion)
 
 ---
 
