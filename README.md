@@ -13,20 +13,22 @@ The project demonstrates how to design a relational database, develop a structur
 
 # Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Technologies](#technologies)
-3. [Database Description](#database-description)
-4. [Laboratory Work 4 — Flask Back-End](#laboratory-work-4--flask-back-end)
-5. [Laboratory Work 5 — Stored Programs in MySQL](#laboratory-work-5--stored-programs-in-mysql)
-6. [Project Architecture](#project-architecture)
-7. [Repository Structure](#repository-structure)
-8. [Installation and Configuration](#installation-and-configuration)
-9. [Running Laboratory Work 4](#running-laboratory-work-4)
-10. [Running Laboratory Work 5](#running-laboratory-work-5)
-11. [API Documentation](#api-documentation)
-12. [SQL Examples](#sql-examples)
-13. [Testing](#testing)
-14. [Learning Outcomes](#learning-outcomes)
+1. [Project Overview](#1-project-overview)
+2. [Technologies](#2-technologies)
+3. [Database Description](#3-database-description)
+4. [Laboratory Work 4 - Flask Back-End](#4-laboratory-work-4--flask-back-end)
+5. [Laboratory Work 5 - Stored Programs in MySQL](#5-laboratory-work-5--stored-programs-in-mysql)
+6. [Project Architecture](#6-project-architecture)
+7. [Repository Structure](#7-repository-structure)
+8. [Installation and Configuration](#8-installation-and-configuration)
+9. [Running Laboratory Work 4](#9-running-laboratory-work-4)
+10. [Running Laboratory Work 5](#10-running-laboratory-work-5)
+11. [API Documentation](#11-api-documentation)
+12. [Testing with Postman](#12-testing-with-postman)
+13. [SQL Examples](#13-sql-examples)
+14. [Testing](#14-testing)
+15. [Learning Outcomes](#15-learning-outcomes)
+16. [Conclusion](#16-conclusion)
 
 ---
 
@@ -163,7 +165,7 @@ The associative table stores additional relationship attributes, including ratin
 
 ---
 
-# 4. Laboratory Work 4 — Flask Back-End
+# 4. Laboratory Work 4 - Flask Back-End
 
 ## 4.1. Objective
 
@@ -278,12 +280,12 @@ These queries demonstrate 1:M, M:1 and M:M relationships.
 
 Two additional indexes were implemented to improve query performance:
 
-- `idx_reservation_dates` — composite index on `reservations(check_in_date, check_out_date)`, designed to support date-based reservation searches.
-- `idx_user_email` — unique index on `users(email)`, providing efficient email lookups and preventing duplicate email addresses.
+- `idx_reservation_dates` - composite index on `reservations(check_in_date, check_out_date)`, designed to support date-based reservation searches.
+- `idx_user_email` - unique index on `users(email)`, providing efficient email lookups and preventing duplicate email addresses.
 
 ---
 
-# 5. Laboratory Work 5 — Stored Programs in MySQL
+# 5. Laboratory Work 5 - Stored Programs in MySQL
 
 ## 5.1. Objective
 
@@ -485,7 +487,7 @@ The procedure returns the requested operation, calculated value and source colum
 
 This demonstrates the integration of a user-defined function with a stored procedure.
 
-## 5.7. Cursor Procedure — Dynamic Table Creation and Random Data Distribution
+## 5.7. Cursor Procedure - Dynamic Table Creation and Random Data Distribution
 
 Procedure:
 
@@ -554,7 +556,7 @@ This demonstrates cursor-based row processing and dynamic SQL execution.
 
 Three additional triggers were implemented for the existing `reservations` table.
 
-### Trigger 1 — BEFORE INSERT
+### Trigger 1 - BEFORE INSERT
 
 Name:
 
@@ -571,7 +573,7 @@ It checks that:
 
 Invalid records are rejected using `SIGNAL SQLSTATE '45000'`.
 
-### Trigger 2 — BEFORE UPDATE
+### Trigger 2 - BEFORE UPDATE
 
 Name:
 
@@ -583,7 +585,7 @@ Applies the same validation rules when an existing reservation is updated.
 
 This ensures that invalid reservation data cannot be introduced through update operations.
 
-### Trigger 3 — AFTER DELETE
+### Trigger 3 - AFTER DELETE
 
 Name:
 
@@ -962,7 +964,7 @@ Both laboratory applications use port `5000` by default. Run them separately, or
 
 # 11. API Documentation
 
-## Laboratory Work 4 — CRUD API
+## Laboratory Work 4 - CRUD API
 
 Base URL:
 
@@ -1010,7 +1012,7 @@ Content-Type: application/json
 }
 ```
 
-## Laboratory Work 5 — Stored Procedure Endpoints
+## Laboratory Work 5 - Stored Procedure Endpoints
 
 Base URL:
 
